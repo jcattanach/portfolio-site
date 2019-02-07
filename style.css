@@ -43,7 +43,7 @@ body {
 .menu--name {
   text-decoration: none;
   color: inherit;
-  font-size: 30px;
+  font-size: 25px;
   margin-left: 100px;
 }
 
@@ -244,11 +244,37 @@ body {
 
 .footer--info-box {
   background-color: white;
-  border: solid 3px lightblue;
+  border: solid 3px white;
+  border-bottom-color: lightblue;
   border-radius: 5px;
-  height: 250px;
-  width: 350px;
-  display: inline-block;
+  height: 200px;
+  width: 300px;
+  display: flex;
   margin: 30px;
+  color: black;
+  text-transform: uppercase;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.footer--info-box h4 {
+  letter-spacing: 5px;
+}
+
+.footer--info-box a {
+  text-decoration: none;
+  color: #777;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.thin-blue {
+  height: 4px;
+  width: 50px;
+  background-color: lightblue;
+  border-radius: 25px;
+  margin: 30px 0;
 }
