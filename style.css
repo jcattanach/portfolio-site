@@ -282,6 +282,26 @@ body {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  //CSS
+
+  .intro-primary-main {
+    font-size: 35px;
+  }
+  .intro-primary-sub {
+    font-size: 20px;
+  }
+
+  .aboutMe {
+    height: 900px;
+  }
+
+  #resume-btn {
+    margin-bottom: 30px;
+  }
+
+  .footer--info {
+    flex-direction: column;
+  }
+
+
 
 }
