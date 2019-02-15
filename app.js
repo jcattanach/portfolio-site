@@ -1,12 +1,12 @@
-const menu = document.getElementById('menu')
+const topnav = document.getElementById('myTopnav')
 
 window.onscroll = function() {changeMenuOnScroll()};
 
 function changeMenuOnScroll() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    menu.classList.add('changeColor')
+    topnav.classList.add('changeColor')
   } else if (document.body.scrollTop < 150 || document.documentElement.scrollTop < 150){
-    menu.classList.remove('changeColor')
+    topnav.classList.remove('changeColor')
   }
 }
 
@@ -37,9 +37,9 @@ $(document).ready(function(){
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+  if (x.className === "topnav" || x.className === "topnav changeColor") {
+    x.classList.add('responsive')
   } else {
-    x.className = "topnav";
+    x.classList.remove('responsive')
   }
 }
