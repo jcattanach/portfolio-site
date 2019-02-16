@@ -5,7 +5,7 @@ window.onscroll = function() {changeMenuOnScroll()};
 function changeMenuOnScroll() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     topnav.classList.add('changeColor')
-  } else if (document.body.scrollTop < 150 || document.documentElement.scrollTop < 150){
+  } else if (document.body.scrollTop < 150 & window.screen.availWidth > 600 || document.documentElement.scrollTop < 150 & window.screen.availWidth > 600){
     topnav.classList.remove('changeColor')
   }
 }
@@ -43,3 +43,15 @@ function myFunction() {
     x.classList.remove('responsive')
   }
 }
+
+function resize(){
+  if(window.screen.availWidth < 600){
+    topnav.classList.add('changeColor')
+  }
+}
+
+// if(window.screen.availWidth < 600){
+//   console.log('less')
+// } else {
+//   console.log('more')
+// }
