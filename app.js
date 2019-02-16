@@ -3,9 +3,9 @@ const topnav = document.getElementById('myTopnav')
 window.onscroll = function() {changeMenuOnScroll()};
 
 function changeMenuOnScroll() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150 || window.screen.availWidth < 600) {
     topnav.classList.add('changeColor')
-  } else if (document.body.scrollTop < 150 & window.screen.availWidth > 600 || document.documentElement.scrollTop < 150 & window.screen.availWidth > 600){
+  } else if (document.body.scrollTop < 150 && window.screen.availWidth > 600 || document.documentElement.scrollTop < 150 && window.screen.availWidth > 600){
     topnav.classList.remove('changeColor')
   }
 }
@@ -47,6 +47,8 @@ function myFunction() {
 function resize(){
   if(window.screen.availWidth < 600){
     topnav.classList.add('changeColor')
+  } else {
+    topnav.classList.remove('changeColor')
   }
 }
 
