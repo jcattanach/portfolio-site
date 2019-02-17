@@ -35,7 +35,7 @@ $(document).ready(function(){
   });
 });
 
-function myFunction() {
+function responsiveMenu() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav" || x.className === "topnav changeColor") {
     x.classList.add('responsive')
@@ -51,9 +51,3 @@ function resize(){
     topnav.classList.remove('changeColor')
   }
 }
-
-// if(window.screen.availWidth < 600){
-//   console.log('less')
-// } else {
-//   console.log('more')
-// }
